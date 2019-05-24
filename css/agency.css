@@ -236,6 +236,10 @@ header.masthead .intro-text .intro-heading {
   font-weight: 700;
 }
 
+.skills-icon {
+  padding: 15px;
+}
+
 #skills .skill-text {
   margin: 5px 0 25px;
 }
@@ -254,7 +258,7 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item-container {
   padding: 10px;
-  border: #6c757d 1px solid;
+  border: #6c757d 5px solid;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -324,10 +328,10 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 0;
   }
 
-  #portfolio .portfolio-item .portfolio-link .portfolio-caption .single-line-title {
+  /* #portfolio .portfolio-item .portfolio-link .portfolio-caption .single-line-title {
     margin-top: 27px;
     margin-bottom: 12px;
-  }
+  } */
 }
 
 @media (min-width: 769px) {
