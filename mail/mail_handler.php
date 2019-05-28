@@ -51,10 +51,10 @@ function getUserIpAddr() {
     return $ip;
 }
 
-$mail->Subject = 'Message from Portfolio Contact at ' . date("m/d/Y H:i:s"); //'Message from ' . $_POST['name'] . ' at (datetime)'
+$mail->Subject = 'Message from Portfolio Contact at ' . date("m/d/Y"); //'Message from ' . $_POST['name'] . ' at (datetime)'
 $mail->Body    = "<div>
                     You have received a new message from your portfolio contact form.<br>
-                    Time Sent: " . date("m/d/Y H:i:s") . "<br>
+                    Time Sent: " . date("m/d/Y") . "<br>
                     Visitor IP: " . getUserIpAddr() . "<br>
                     Visitor Name: {$_POST['name']}<br>
                     Visitor Email: {$_POST['email']}<br>
