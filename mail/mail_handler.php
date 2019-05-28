@@ -4,6 +4,10 @@ require_once('phpmailer/PHPMailer/src/Exception.php');
 require_once('phpmailer/PHPMailer/src/PHPMailer.php');
 require_once('phpmailer/PHPMailer/src/SMTP.php');
 
+foreach($_POST as $key => $value){
+    $_POST[$key] = addslashes($value);
+}
+
 $mail = new PHPMailer\PHPMailer\PHPMailer;
 $mail->SMTPDebug = 0;           // Enable verbose debug output. Change to 0 to disable debugging output when using on live site.
 
@@ -47,21 +51,18 @@ function getUserIpAddr() {
     return $ip;
 }
 
-$mail->Subject = 'Message from ' . $_POST['name'] . ' at ' . date("m/d/Y") . ' from IP:' . getUserIpAddr(); //'Message from ' . $_POST['name'] . ' at (datetime)'
+$mail->Subject = 'Message from Portfolio Contact at ' . date("m/d/Y H:i:s"); //'Message from ' . $_POST['name'] . ' at (datetime)'
 $mail->Body    = "<div>
-                    Name: {$_POST['name']}
-                </div>
-                <div>
-                    Visitor Email: {$_POST['email']}
-                </div>
-                <div>
-                    Subject: {$_POST['subject']}
-                </div>
-                <div>
-                    Message: {$_POST['message']}
+                    You have received a new message from your portfolio contact form.<br>
+                    Time Sent: " . date("m/d/Y H:i:s") . "<br>
+                    Visitor IP: " . getUserIpAddr() . "<br>
+                    Visitor Name: {$_POST['name']}<br>
+                    Visitor Email: {$_POST['email']}<br>
+                    Subject: {$_POST['subject']}<br>
+                    Message: {$_POST['message']}<br>
                 </div>
                 "; //html format of email <div>Subject: {$_POST['subject']}</div> etc. subject, name, email, message, ip address, date
-$mail->AltBody = "Name: {$_POST['name']}, Visitor Email: {$_POST['email']}, Subject: {$_POST['subject']}, Message: {$_POST['message']}"; //strings of message
+$mail->AltBody = "Time Sent: " . date("m/d/Y H:i:s") . " Visitor IP: " . getUserIpAddr() . " Visitor Name: {$_POST['name']}, Visitor Email: {$_POST['email']}, Subject: {$_POST['subject']}, Message: {$_POST['message']}"; //strings of message
 
 if (!$mail->send()) { //needs to change to print(json_encode(['success' => true]))
     print(json_encode([
