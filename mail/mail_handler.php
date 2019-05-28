@@ -67,7 +67,7 @@ if (!$mail->send()) { //needs to change to print(json_encode(['success' => true]
     print(json_encode([
         'success' => false,
         'message' => 'Message could not be sent.',
-        // 'error' => $mail->ErrorInfo
+        'error' => $mail->ErrorInfo
     ]));
 } else {
     print(json_encode([
