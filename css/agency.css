@@ -171,7 +171,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/header-img.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -666,9 +666,10 @@ header.masthead .intro-text .btn  {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-image: url("../img/laptop-desk.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  background-size: cover;
 }
 
 section#contact .section-heading {
@@ -723,27 +724,27 @@ section#contact :-ms-input-placeholder {
 }
 
 footer {
-  padding: 25px 0;
   text-align: center;
 }
 
 footer span.copyright {
   font-size: 90%;
-  line-height: 40px;
+  line-height: 75px;
   text-transform: none;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 footer ul.quicklinks {
   font-size: 90%;
-  line-height: 40px;
+  line-height: 75px;
   margin-bottom: 0;
   text-transform: none;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 ul.social-buttons {
-  margin-bottom: 25px;
+  line-height: 75px;
+  margin-bottom: 0;
 }
 
 ul.social-buttons li a {
