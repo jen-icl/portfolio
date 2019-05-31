@@ -20,6 +20,7 @@ if (
     empty($_POST['message']) ||
     !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)
 ) {
+    http_response_code(400);
     throw new Exception('No arguments Provided!');
 }
 
