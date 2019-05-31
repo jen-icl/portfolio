@@ -30,7 +30,7 @@ $options = array(
 $mail->smtpConnect($options);
 $mail->From = 'jen.icldaemon@gmail.com';  // sender's email address (shows in "From" field) //my server gmail
 $mail->FromName = 'Jen Portfolio Daemon';   // sender's name (shows in "From" field) //Jen Portfolio Daemon
-$mail->addAddress('jenniferlai.81@gmail.com', 'J Lai');  // Add a recipient (name is optional) //my real gmail
+$mail->addAddress('iclai.work@gmail.com', 'I');  // Add a recipient (name is optional) //my real gmail
 //$mail->addAddress('ellen@example.com');                        // Add a second recipient
 $mail->addReplyTo($_POST['email']);        //$_POST['email']           // Add a reply-to address //the email the viewer person passed in, needs to be changed to a variable
 //$mail->addCC('cc@example.com');
