@@ -1,11 +1,27 @@
 <?php
+use PHPMailer\PHPMailer\Exception;
+
 require_once('email_config.php');
 require_once('phpmailer/PHPMailer/src/Exception.php');
 require_once('phpmailer/PHPMailer/src/PHPMailer.php');
 require_once('phpmailer/PHPMailer/src/SMTP.php');
 
-foreach($_POST as $key => $value){
+require_once('function.php');
+set_exception_handler('handleError');
+
+foreach ($_POST as $key => $value) {
     $_POST[$key] = addslashes($value);
+}
+
+if (
+    empty($_POST['name']) ||
+    empty($_POST['email']) ||
+    empty($_POST['subject']) ||
+    empty($_POST['message']) ||
+    !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)
+) {
+    http_response_code(400);
+    throw new Exception('No arguments Provided!');
 }
 
 $mail = new PHPMailer\PHPMailer\PHPMailer;
@@ -40,7 +56,8 @@ $mail->addReplyTo($_POST['email']);        //$_POST['email']           // Add a 
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-function getUserIpAddr() {
+function getUserIpAddr()
+{
     if (!empty($_SERVER['HTTP_CLIENT_IP'])) { //ip from share internet
         $ip = $_SERVER['HTTP_CLIENT_IP'];
     } else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) { //ip pass from proxy
