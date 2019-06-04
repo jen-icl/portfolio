@@ -14,15 +14,15 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #80cbc4;
 }
 
 a:hover {
-  color: #fec503;
+  color: #4db6ac;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #80cbc4  !important;
 }
 
 h1,
@@ -36,7 +36,7 @@ h6 {
 }
 
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 section h2.section-heading {
@@ -49,15 +49,9 @@ section h3.section-subheading {
   font-size: 16px;
   font-weight: 400;
   font-style: italic;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   text-transform: none;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
-@media (min-width: 768px) {
-  section {
-    padding: 150px 0;
-  }
 }
 
 .btn {
@@ -71,13 +65,13 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #80cbc4 ;
+  border-color: #80cbc4 ;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #4db6ac !important;
+  border-color: #4db6ac !important;
   color: white;
 }
 
@@ -87,12 +81,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #80cbc4 ;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #80cbc4 ;
   text-shadow: none;
 }
 
@@ -119,17 +113,18 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #80cbc4 ;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
-  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color: #80cbc4 ;
+  font-family: 'Great Vibes', cursive, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 900;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #4db6ac;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -142,7 +137,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #80cbc4 ;
 }
 
 @media (min-width: 992px) {
@@ -176,7 +171,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/header-img.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -188,20 +183,31 @@ header.masthead .intro-text {
   padding-bottom: 100px;
 }
 
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
-  margin-bottom: 25px;
+header.masthead .intro-text .intro-heading {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-left: 20px;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-header.masthead .intro-text .intro-heading {
-  font-size: 50px;
+header.masthead .intro-text .intro-lead-in {
+  font-size: 30px;
   font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-style: italic;
+  line-height: 38px;
+  margin: 0 0 25px 20px;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+header.masthead .intro-text .btn  {
+  margin-left: 20px;
+}
+
+@media (min-width: 320px) {
+  header.masthead .intro-text .btn {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -209,30 +215,51 @@ header.masthead .intro-text .intro-heading {
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
-    font-style: italic;
-    line-height: 40px;
-    margin-bottom: 25px;
-    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  }
   header.masthead .intro-text .intro-heading {
-    font-size: 75px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 75px;
-    margin-bottom: 50px;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 60px;
+    font-style: italic;
+    line-height: 75px;
+    margin: 0 0 30px 20px;
+  }
+  header.masthead .intro-text .btn {
+    font-size: 20px;
   }
 }
 
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
+#skills .container {
+  padding: 0 25px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.skills-icon {
+  padding: 15px;
+}
+
+#skills .skill-text {
+  margin: 5px 0 25px;
+}
+
+@media (min-width: 768px) {
+  #skills .container {
+    padding:  0 50px;
+    font-size: 1.2rem;
+  }
 }
 
 #portfolio .portfolio-item {
   right: 0;
-  margin: 0 0 15px;
+  margin-bottom: 10px;
+}
+
+#portfolio .portfolio-item-container {
+  padding: 10px;
+  border: #6c757d 1px solid;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -241,6 +268,7 @@ header.masthead .intro-text .intro-heading {
   max-width: 400px;
   margin: 0 auto;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -250,7 +278,7 @@ header.masthead .intro-text .intro-heading {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: #80cbc4;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -259,11 +287,11 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 20px;
+  font-weight: 700;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%;
   height: 20px;
-  margin-top: -12px;
   text-align: center;
   color: white;
 }
@@ -272,25 +300,20 @@ header.masthead .intro-text .intro-heading {
   margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-  margin: 0;
-}
-
-#portfolio .portfolio-item .portfolio-caption {
+#portfolio .portfolio-item .portfolio-link .portfolio-caption {
   max-width: 400px;
-  margin: 0 auto;
-  padding: 25px;
+  margin: 15px auto 0;
   text-align: center;
   background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#portfolio .portfolio-item .portfolio-link .portfolio-caption h5 {
   margin: 0;
   text-transform: none;
+  color: #000;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#portfolio .portfolio-item .portfolio-link .portfolio-caption p {
   font-size: 16px;
   font-style: italic;
   margin: 0;
@@ -301,19 +324,20 @@ header.masthead .intro-text .intro-heading {
   z-index: 2;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   #portfolio .portfolio-item {
-    margin: 0 0 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  #portfolio .portfolio-item .portfolio-link .portfolio-caption .single-line-title {
+    margin: 0;
   }
 }
 
 .portfolio-modal {
   padding-right: 0px !important;
-}
-
-.portfolio-modal .modal-dialog {
-  margin: 1rem;
-  max-width: 100vw;
 }
 
 .portfolio-modal .modal-content {
@@ -327,7 +351,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content p {
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .portfolio-modal .modal-content p.item-intro {
@@ -339,7 +363,26 @@ header.masthead .intro-text .intro-heading {
 
 .portfolio-modal .modal-content ul.list-inline {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  text-align: left;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.portfolio-modal .modal-content ul.list-inline > li {
+  padding: 15px 0;
+  margin-bottom: 15px;
+  border-bottom: #6c757d 1px solid;
+  word-wrap: break-word;
+}
+
+.portfolio-modal .modal-content ul.list-inline .links {
+  padding: 0 0 15px 0;
+}
+
+.portfolio-modal .modal-content ul.list-inline span {
+  display: block;
+  font-weight: 700;
+
 }
 
 .portfolio-modal .modal-content img {
@@ -452,7 +495,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: #80cbc4 ;
 }
 
 .timeline > li .timeline-image h4 {
@@ -573,32 +616,33 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
-.team-member {
-  margin-bottom: 50px;
+.about-me {
+  margin-bottom: 0px;
   text-align: center;
 }
 
-.team-member img {
+.about-me img {
   width: 225px;
   height: 225px;
   border: 7px solid #fff;
 }
 
-.team-member h4 {
+.about-me h4 {
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
 }
 
-.team-member p {
+.about-me p {
   margin-top: 0;
 }
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-image: url("../img/laptop-desk.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  background-size: cover;
 }
 
 section#contact .section-heading {
@@ -623,7 +667,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #80cbc4 ;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -653,26 +697,26 @@ section#contact :-ms-input-placeholder {
 }
 
 footer {
-  padding: 25px 0;
   text-align: center;
 }
 
 footer span.copyright {
   font-size: 90%;
-  line-height: 40px;
+  line-height: 75px;
   text-transform: none;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 footer ul.quicklinks {
   font-size: 90%;
-  line-height: 40px;
+  line-height: 75px;
   margin-bottom: 0;
   text-transform: none;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 ul.social-buttons {
+  line-height: 75px;
   margin-bottom: 0;
 }
 
@@ -691,5 +735,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: #80cbc4 ;
 }

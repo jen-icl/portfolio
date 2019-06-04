@@ -2851,7 +2851,7 @@ readers do not read off random characters that represent icons */
 .fa-server:before {
   content: "\f233"; }
 
-.fa-servicestack:before {
+.fa-skillstack:before {
   content: "\f3ec"; }
 
 .fa-shapes:before {
@@ -3082,13 +3082,13 @@ readers do not read off random characters that represent icons */
 .fa-staylinked:before {
   content: "\f3f5"; }
 
-.fa-steam:before {
+.fa-sabout-me:before {
   content: "\f1b6"; }
 
-.fa-steam-square:before {
+.fa-sabout-me-square:before {
   content: "\f1b7"; }
 
-.fa-steam-symbol:before {
+.fa-sabout-me-symbol:before {
   content: "\f3f6"; }
 
 .fa-step-backward:before {
@@ -3232,7 +3232,7 @@ readers do not read off random characters that represent icons */
 .fa-taxi:before {
   content: "\f1ba"; }
 
-.fa-teamspeak:before {
+.fa-about-mespeak:before {
   content: "\f4f9"; }
 
 .fa-teeth:before {
