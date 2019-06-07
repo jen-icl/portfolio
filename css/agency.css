@@ -622,8 +622,8 @@ header.masthead .intro-text .btn  {
 }
 
 .about-me img {
-  width: 150px;
-  height: 150px;
+  width: 225px;
+  height: 225px;
   border: 7px solid #fff;
 }
 
@@ -635,6 +635,13 @@ header.masthead .intro-text .btn  {
 
 .about-me p {
   margin-top: 0;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .about-me img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 section#contact {
