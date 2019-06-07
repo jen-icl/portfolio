@@ -622,8 +622,8 @@ header.masthead .intro-text .btn  {
 }
 
 .about-me img {
-  width: 225px;
-  height: 225px;
+  width: 150px;
+  height: 150px;
   border: 7px solid #fff;
 }
 
@@ -647,6 +647,10 @@ section#contact {
 
 section#contact .section-heading {
   color: #fff;
+}
+
+section#contact .section-subheading {
+  color:#cfd8dc;
 }
 
 section#contact .form-group {
