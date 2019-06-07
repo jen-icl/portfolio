@@ -637,6 +637,13 @@ header.masthead .intro-text .btn  {
   margin-top: 0;
 }
 
+@media (min-width: 576px) and (max-width: 767px) {
+  .about-me img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 section#contact {
   background-color: #212529;
   background-image: url("../img/laptop-desk.jpg");
@@ -647,6 +654,10 @@ section#contact {
 
 section#contact .section-heading {
   color: #fff;
+}
+
+section#contact .section-subheading {
+  color:#cfd8dc;
 }
 
 section#contact .form-group {
